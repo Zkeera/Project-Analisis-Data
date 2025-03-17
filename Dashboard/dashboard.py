@@ -7,8 +7,8 @@ from streamlit_option_menu import option_menu
 # Load data
 @st.cache_data
 def load_data():
-    day_df = pd.read_csv("https://raw.githubusercontent.com/Zkeera/Project-Analisis-Data/refs/heads/main/day.csv")
-    hour_df = pd.read_csv("https://raw.githubusercontent.com/Zkeera/Project-Analisis-Data/refs/heads/main/hour.csv")
+    day_df = pd.read_csv('https://raw.githubusercontent.com/Zkeera/Project-Analisis-Data/refs/heads/main/Data/day.csv')
+    hour_df = pd.read_csv('https://raw.githubusercontent.com/Zkeera/Project-Analisis-Data/refs/heads/main/Data/hour.csv')
     day_df['dteday'] = pd.to_datetime(day_df['dteday'])
     hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
     return day_df, hour_df
