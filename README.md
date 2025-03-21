@@ -1,16 +1,7 @@
-## Setup Environment - Anaconda
+## Setup Environment - Python
 ```
-conda create --name main-ds python=3.9
-conda activate main-ds
-pip install -r requirements.txt
-```
-
-## Setup Environment - Shell/Terminal
-```
-mkdir proyek_analisis_data
-cd proyek_analisis_data
-pipenv install
-pipenv shell
+python -m venv main-ds
+main-ds\Scripts\activate     # Untuk Windows
 pip install -r requirements.txt
 ```
 
